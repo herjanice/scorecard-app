@@ -5,7 +5,7 @@
   "license": "MIT",
   "engines": {
     "node": "14.x.x",
-    "yarn": "1.22.1"
+    "yarn": "1.22.19"
   },
   "scripts": {
     "start": "cd frontend && yarn start",
