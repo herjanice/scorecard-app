@@ -1,5 +1,15 @@
 import { Router } from 'express';
-import ScoreCard from '../models/ScoreCard';
+
+import mongoose from 'mongoose';
+
+const Schema = mongoose.Schema;
+const ScoreCardSchema = new Schema ({
+    // id: Number, // Number is shorthand for {type: Number}
+    name: String,
+    subject: String,
+    score: Number
+});
+const ScoreCard = mongoose.model('ScoreCard', ScoreCardSchema);
 
 const router = Router();
 

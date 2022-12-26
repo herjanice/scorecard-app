@@ -15,7 +15,7 @@ const Wrapper = styled.section`
   }
 `;
 
-const Header = () => {
+export default function Header() {
   const { addRegularMessage } = useScoreCard();
 
   const handleClear = async () => {
@@ -35,4 +35,3 @@ const Header = () => {
   );
 };
 
-export default Header;

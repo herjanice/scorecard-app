@@ -36,7 +36,7 @@ const ContentPaper = styled(Paper)`
   overflow: auto;
 `;
 
-const Body = () => {
+export default function Body() {
   const classes = useStyles();
 
   const { messages, addCardMessage, addRegularMessage, addErrorMessage } =
@@ -161,5 +161,3 @@ const Body = () => {
     </Wrapper>
   );
 };
-
-export default Body;
