@@ -17,7 +17,7 @@ const StyledPaper = styled(Paper)`
   padding: 2em;
 `;
 
-function App() {
+export default function App() {
   return (
     <Wrapper>
       <StyledPaper elevation={3}>
@@ -26,6 +26,4 @@ function App() {
       </StyledPaper>
     </Wrapper>
   );
-}
-
-export default App;
+};
