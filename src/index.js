@@ -1,7 +1,7 @@
 import React from "react";
-import { ReactDOM } from "react-dom";
+import ReactDOM from "react-dom";
 import "./index.css";
-import App from "./containers/App";
+import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { ScoreCardProvider } from "./hooks/useScoreCard";
 
