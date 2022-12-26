@@ -1,5 +1,5 @@
-import Header from './containers/Header';
-import Body from './containers/Body';
+import Header from './containers/header';
+import Body from './containers/body';
 import styled from 'styled-components';
 import Paper from '@material-ui/core/Paper';
 
