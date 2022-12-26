@@ -30,7 +30,7 @@
     "mongoose": "^6.7.0"
   },
   "scripts": {
-    "start": "nodemon src/server.js --ext js --exec babel-node",
+    "start": "nodemon server.js --ext js --exec babel-node",
     "build": "react-scripts build",
     "start_react": "react-scripts start"
   },
