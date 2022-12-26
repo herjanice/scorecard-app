@@ -1,2 +1,2 @@
-export * from './header';
-export * from './body';
+export * from './Header';
+export * from './Body';
