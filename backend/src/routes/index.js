@@ -1,4 +1,5 @@
 import { Router } from 'express';
+import ScoreCard from '../models/ScoreCard';
 
 const router = Router();
 
