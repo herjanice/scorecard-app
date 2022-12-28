@@ -15,23 +15,7 @@ if (process.env.NODE_ENV === "development") {
 app.use(express.json());
 
 db.connect();
-const database = mongoose.connection;
 
-// app.use('/', routes);
-// define routes
-// app.get("/api", (req, res) => {
-//     // send the request back to the client
-//     console.log("GET /api");
-//     res.send({ message: "Hello from the server!" }).status(200);
-// });
-// app.use("/api", apiRoute);
-// if (process.env.NODE_ENV === "production") {
-//     const __dirname = path.resolve();
-//     app.use(express.static(path.join(__dirname, "../frontend", "build")));
-//     app.get("/*", function (req, res) {
-//       res.sendFile(path.join(__dirname, "../frontend", "build", "index.html"));
-//     });
-// }
 app.use("/api", routes);
 app.use(bodyParser.json());
 if (process.env.NODE_ENV === "production") {
