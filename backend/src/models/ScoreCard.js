@@ -1,11 +1,10 @@
-import mongoose from 'mongoose';
+import mongoose from 'mongoose'
 
 const Schema = mongoose.Schema;
-const ScoreCardSchema = new Schema ({
-    // id: Number, // Number is shorthand for {type: Number}
-    name: String,
-    subject: String,
-    score: Number
+const ScoreCardSchema = new Schema({
+  name: String,
+  subject: String,
+  score: Number
 });
 const ScoreCard = mongoose.model('ScoreCard', ScoreCardSchema);
 

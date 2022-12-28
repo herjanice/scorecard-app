@@ -26,6 +26,7 @@ const Row = styled.div`
   padding: 1em;
 `;
 
+// override the original one
 const StyledFormControl = styled(FormControl)`
   min-width: 120px;
 `;
@@ -108,7 +109,7 @@ const Body = () => {
           className={classes.button}
           variant="contained"
           color="primary"
-          disabled={!name || !subject}
+          disabled={!name || !subject} // name and subject must both have inputs, or else, disabled.
           onClick={handleAdd}
         >
           Add
