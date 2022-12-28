@@ -1,5 +1,5 @@
 import { Router } from 'express';
-import ScoreCardRouter from './scoreCard.js';
+import ScoreCardRouter from './scoreCard';
 
 const router = Router();
 router.use('/', ScoreCardRouter);

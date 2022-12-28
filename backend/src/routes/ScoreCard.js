@@ -3,7 +3,7 @@ import ScoreCard from "../models/ScoreCard";
 
 const router = Router();
 
-router.delete("/cards", async (_, res) => {
+router.delete("/cards", async (req, res) => {
     try {
         await ScoreCard.deleteMany({});
         console.log("Database cleared");
